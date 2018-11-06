@@ -3,6 +3,7 @@ from src.minimiza import *
 from src.determiniza import *
 from src.uteis import *
 
+
 afd = {}
 alfabeto = []
 gramatica = []
