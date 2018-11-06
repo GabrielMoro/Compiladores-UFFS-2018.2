@@ -7,7 +7,7 @@ def eliminarInalcancaveis(afnd):
             return
         visitados.add(estado)
         for chave in regra.keys():
-            if chave == '*':
+            if chave == '#':
                 continue
             for i in regra[chave]:
                 elimina(afnd[i], i)
@@ -23,7 +23,7 @@ def eliminarInuteis(afnd):
     visitados = set()
     uteis = set()
     for rg in afnd:
-        if '*' in afnd[rg].keys():
+        if '#' in afnd[rg].keys():
             uteis.add(rg)
     def elimina(regra, nRegra):     # Utiliza uma dfs para encontrar os estados inuteis
         if nRegra in uteis:
@@ -47,7 +47,7 @@ def eliminarInuteis(afnd):
     for regra in afnd.keys():       # Transições para estados não uteis também são eliminados
         aux = list(afnd[regra].keys())
         for chave in aux:
-            if chave == '*':
+            if chave == '#':
                 continue
             for rg in afnd[regra][chave]:
                 if rg not in uteis:

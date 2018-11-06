@@ -17,7 +17,7 @@ def gerarAfndToken(afnd, token, alfabeto):
             tkInicial = False
         else:
             afnd.update({len(afnd) : {tk: [len(afnd) + 1]}})
-    afnd.update({len(afnd) : {'*': [1]}})
+    afnd.update({len(afnd) : {'#': [1]}})
 
 def gerarAfndGramatica(afnd, gramatica, alfabeto):
     if not afnd:
@@ -44,7 +44,7 @@ def gerarAfndGramatica(afnd, gramatica, alfabeto):
                     rg[term].append(len(aTemp))
                 else:
                     rg.update({term : [len(aTemp)]})
-                aTemp.update({len(aTemp): {'*':[1]}})
+                aTemp.update({len(aTemp): {'#':[1]}})
             else:
                 nTerm = nTerm[0]
                 if nTerm in mpRgs.keys():

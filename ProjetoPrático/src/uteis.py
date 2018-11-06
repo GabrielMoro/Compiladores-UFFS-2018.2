@@ -26,7 +26,7 @@ def unirAutomatos(afd, aTemp):
         afd[0].update({'&': [mpEst[0]]})
     for chave in aTemp.keys():
         for ch in aTemp[chave].keys():
-            if ch == '*':
+            if ch == '#':
                 continue
             aux = []
             for i in aTemp[chave][ch]:
@@ -44,8 +44,8 @@ def exibirAutomatoDeterministico(afnd, alfabeto):
         print('  {:2}|'.format(i), end='')
     print('\n     {}'.format('-----'*len(alfabeto)))
     for i in afnd.keys():
-        if '*' in afnd[i].keys():
-            print('*', end='')
+        if '#' in afnd[i].keys():
+            print('#', end='')
         else:
             print(' ', end='')
         print('{:3}:|'.format(i), end='')
