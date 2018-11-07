@@ -1,0 +1,42 @@
+// Atribuir valor
+a = y
+
+// op
+a > y	// Maior
+a < y	// Menor
+a == y	// Igual
+a <> y	// Diferente
+a >= y	// Maior ou igual
+a <= y	// Menor ou igual
+not a   // Negação
+a + y    // Soma
+a - y     // Subtração
+a * y     // Multiplicação
+a / y     // Divisão
+a ** y	// Potenciação
+
+// Declaração de variáveis
+int a, b
+real c
+string p
+
+// Loops
+for start, end
+    // Código
+endfor
+
+while op
+    // Código
+endwhile
+
+// Condicionais
+if op then
+    // código se verdadeiro
+else
+    // código se não verdadeiro
+endif
+
+// Input e Output
+show var	// print var
+show ‘str’ 	// print string
+read var	// scan
