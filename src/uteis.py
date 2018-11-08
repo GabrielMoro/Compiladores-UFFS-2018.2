@@ -37,7 +37,7 @@ def unirAutomatos(afd, aTemp):
 
 
 def exibirAutomatoDeterministico(afnd, alfabeto):
-    #alfabeto.sort()
+    alfabeto.sort()
     print('     {}'.format('-----'*len(alfabeto)))
     print('     |', end='')
     for i in alfabeto:
