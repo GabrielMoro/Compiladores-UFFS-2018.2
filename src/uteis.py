@@ -38,11 +38,11 @@ def unirAutomatos(afd, aTemp):
 
 def exibirAutomatoDeterministico(afnd, alfabeto):
     #alfabeto.sort()
-    print('     {}'.format('-----'*len(alfabeto)))
+    print('     {}'.format('------'*len(alfabeto)))
     print('     |', end='')
     for i in alfabeto:
-        print('  {:2}|'.format(i), end='')
-    print('\n     {}'.format('-----'*len(alfabeto)))
+        print('  {:3}|'.format(i), end='')
+    print('\n     {}'.format('------'*len(alfabeto)))
     for i in afnd.keys():
         if '#' in afnd[i].keys():
             print('#', end='')
@@ -51,11 +51,11 @@ def exibirAutomatoDeterministico(afnd, alfabeto):
         print('{:3}:|'.format(i), end='')
         for j in alfabeto:
             if j in afnd[i].keys():
-                print(' {:2} |'.format(afnd[i][j][0]), end='')
+                print(' {:3} |'.format(afnd[i][j][0]), end='')
             else:
-                print(' {:2} |'.format('-'), end='')
+                print(' {:3} |'.format('-'), end='')
         print('')
-    print('     {}'.format('-----'*len(alfabeto)))
+    print('     {}'.format('------'*len(alfabeto)))
 
 def AFDparaLex(afd, alfabeto):
     saida = open("AFDparaLex", "w")
