@@ -37,7 +37,7 @@ def unirAutomatos(afd, aTemp):
 
 
 def exibirAutomatoDeterministico(afnd, alfabeto):
-    alfabeto.sort()
+    #alfabeto.sort()
     print('     {}'.format('-----'*len(alfabeto)))
     print('     |', end='')
     for i in alfabeto:
@@ -56,3 +56,29 @@ def exibirAutomatoDeterministico(afnd, alfabeto):
                 print(' {:2} |'.format('-'), end='')
         print('')
     print('     {}'.format('-----'*len(alfabeto)))
+
+def AFDparaLex(afd, alfabeto):
+    saida = open("AFDparaLex", "w")
+
+    saida.write(str(len(afd)) + '\n')
+
+    simbolos = ""
+
+    for simbolo in alfabeto:
+        simbolos += simbolo + ' '
+
+    simbolos = simbolos[:-1]
+    simbolos += '\n'
+
+    saida.write(simbolos)
+
+    for estado in afd:
+        estados = ""
+        for chave in alfabeto:
+            if chave in afd[estado]:
+                estados += str(afd[estado][chave][0]) + ' '
+            else:
+                estados += str(-1) + ' '
+        estados = estados[:-1]
+        estados += '\n'
+        saida.write(estados)
