@@ -1,37 +1,37 @@
-const
-var
-main
-if
-for
 int
-float
-string
-.
-;
+real
+char
+for
+endfor
+while
+endwhile
+if
+then
 else
-:
-input
-output
-=
-!
-~
-+
--
-*
-/
-(
-)
-,
+endif
+show
+read
 '
-"
+,
+**
+/
+*
+-
++
+not
+<=
+>=
+<>
+==
+<
+>
+=
 
 <S> ::= a<A> | b<A> | c<A> | d<A> | e<A> | f<A> | g<A> | h<A> | i<A> | j<A> | k<A> | l<A> | m<A> | n<A> | o<A> | p<A> | q<A> | r<A> | s<A> | t<A> | u<A> | v<A> | w<A> | x<A> | y<A> | z<A>
 <A> ::= a<A> | b<A> | c<A> | d<A> | e<A> | f<A> | g<A> | h<A> | i<A> | j<A> | k<A> | l<A> | m<A> | n<A> | o<A> | p<A> | q<A> | r<A> | s<A> | t<A> | u<A> | v<A> | w<A> | x<A> | y<A> | z<A> | 1<A> | 2<A> | 3<A> | 4<A> | 5<A> | 6<A> | 7<A> | 8<A> | 9<A> | 0<A> | _<A> | -<A> | &
 <B> ::= 1<C> | 2<C> | 3<C> | 4<C> | 5<C> | 6<C> | 7<C> | 8<C> | 9<C> | 0<C>
 <C> ::= 1<C> | 2<C> | 3<C> | 4<C> | 5<C> | 6<C> | 7<C> | 8<C> | 9<C> | 0<C> | .<D> | &
 <D> ::= 1<D> | 2<D> | 3<D> | 4<D> | 5<D> | 6<D> | 7<D> | 8<D> | 9<D> | 0<D> | &
-<E> ::= '<F> | "<H>
+<E> ::= '<F>
 <F> ::= a<F> | b<F> | c<F> | d<F> | e<F> | f<F> | g<F> | h<F> | i<F> | j<F> | k<F> | l<F> | m<F> | n<F> | o<F> | p<F> | q<F> | r<F> | s<F> | t<F> | u<F> | v<F> | w<F> | x<F> | y<F> | z<F> | <G>
 <G> ::= '
-<H> ::= a<F> | b<F> | c<F> | d<F> | e<F> | f<F> | g<F> | h<F> | i<F> | j<F> | k<F> | l<F> | m<F> | n<F> | o<F> | p<F> | q<F> | r<F> | s<F> | t<F> | u<F> | v<F> | w<F> | x<F> | y<F> | z<F> | <I>
-<I> ::= "
