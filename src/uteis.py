@@ -84,8 +84,8 @@ def AFDparaLex(afd, alfabeto):
         aux_afd[novoEstado] = afd[estado].copy()
         novoEstado += 1
 
-    for estado in afd:
-        print('Old = {}| New = {}'.format(estado, oldtonew[estado]))
+    #for estado in afd:
+    #    print('Old = {}| New = {}'.format(estado, oldtonew[estado]))
 
     for estado in afd:
         estados = ""
