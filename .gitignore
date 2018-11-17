@@ -1,3 +1,6 @@
 
 *.pyc
 *.pyc
+saidaTesteEstado
+saidaTesteLex
+src/__pycache__/uteis.cpython-37.pyc
