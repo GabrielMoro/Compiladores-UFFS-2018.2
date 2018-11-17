@@ -1,0 +1,5 @@
+if var1 < var2 then
+  var1 = var1 + 2
+else
+  var2 = var2 + 1
+endif
