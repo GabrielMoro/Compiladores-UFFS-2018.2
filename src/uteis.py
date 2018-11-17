@@ -74,18 +74,32 @@ def AFDparaLex(afd, alfabeto):
 
     finais = ""
 
+    aux_afd = {}
+    novoEstado = 0
+    oldtonew = {}
+
+
+    for estado in afd:
+        oldtonew.update({estado : novoEstado})
+        aux_afd[novoEstado] = afd[estado].copy()
+        novoEstado += 1
+
+    for estado in afd:
+        print('Old = {}| New = {}'.format(estado, oldtonew[estado]))
+
     for estado in afd:
         estados = ""
         if '#' in afd[estado].keys():
-            finais += str(estado) + ' '
+            finais += str(oldtonew[estado]) + ' '
         for chave in alfabeto:
             if chave in afd[estado]:
-                estados += str(afd[estado][chave][0]) + ' '
+                estados += str(oldtonew[afd[estado][chave][0]]) + ' ' # {0 : {'*' : [1]}}
             else:
                 estados += str(-1) + ' '
         estados = estados[:-1]
         estados += '\n'
         saida.write(estados)
+
 
     finais = finais[:-1]
     finais += '\n'
