@@ -79,3 +79,41 @@ while openpar num more var closepar if openpar var more E closepar then var equa
 while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num EL endif endwhile S $
 while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num endline endif endwhile S $
 while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num endline endif endwhile$
+
+while (1 > 2)
+  if (x > a) then
+    x = 1;
+  else
+    x = 2;
+  endif
+endwhile
+
+S' $
+S $
+CD S $
+WL S $
+while CND CD endwhile S $
+while openpar OL closepar CD endwhile S $
+while openpar var more var closepar CD endwhile S $
+while openpar var more var closepar AV EL endwhile S $
+while openpar var more var closepar var equal num endline endwhile S $
+while openpar var more var closepar var equal num endline endwhile AV EL $
+while openpar var more var closepar var equal num endline endwhile var equal var endline $
+
+while (v > a)
+  x = 1;
+endwhile
+x = x;
+
+IF S $
+if openpar var more var closepar then IF' endif S $
+if openpar var more var closepar then CD else CD endif S $
+if openpar var more var closepar then AV EL else CD endif S $
+if openpar var more var closepar then var equal num EL else CD endif S $
+if openpar var more var closepar then var equal num endline else var equal var endline endif$
+
+if (x > x) then
+  x = 1;
+else
+  x = x;
+endif
