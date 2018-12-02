@@ -1,5 +1,26 @@
-if var1 < var2 then
-  var1 = var1 + 2
+int a = 3;
+int x, y = a - 2;
+x = y;
+int b;
+read b;
+
+if (not (x < y)) then
+  x = 2;
 else
-  var2 = var2 + 1
+  b = 1;
 endif
+
+show 2;
+x = 1 + 2 / 3;
+
+for 1, 10
+  show y + 1;
+endfor
+
+while (a > x)
+  a = a - 1;
+endwhile
+
+read b;
+show b;
+showb

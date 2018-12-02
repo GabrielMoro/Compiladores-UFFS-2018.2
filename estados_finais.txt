@@ -1,0 +1,58 @@
+int              -> 42
+nome da var      -> 14
+=                -> 10
+numeros          -> 15
+;                -> 11
+char             -> 20
+'                -> 1
+caracter         -> 16
+for              -> 39
+endfor           -> 26
+while            -> 63
+endwhile         -> 31
+if               -> 43
+then             -> 58
+else             -> 36
+endif            -> 33
+show             -> 54
+read             -> 50
+,                -> 2
+/                -> 3
+*                -> 4
+-                -> 5
++                -> 6
+not              -> 46
+<                -> 7
+>                -> 8
+?                -> 9
+(                -> 12
+)                -> 13
+
+{
+36 : 'int',
+13 : 'var',
+9 : 'equal',
+14 : 'num',
+10 : 'endline',
+33: 'for',
+20: 'endfor',
+57: 'while',
+25: 'endwhile',
+37: 'if',
+52: 'then',
+30: 'else',
+27: 'endif',
+48: 'show',
+44: 'read',
+1: 'comma',
+2: 'slash',
+3: 'asterisk',
+4: 'minus',
+5: 'plus',
+40: 'not',
+6: 'less',
+7: 'more',
+8: 'diff',
+11: 'openpar',
+12: 'closepar',
+}

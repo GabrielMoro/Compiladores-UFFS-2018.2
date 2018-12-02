@@ -1,0 +1,34 @@
+S' ::= S $
+S  ::= CD S | &
+CD ::= DI EL | SW EL | RD EL | FR | WL | IF | AV EL
+E ::= var | num
+
+OA ::= E OPA OA | E
+
+OPA ::= plus | minus | asterisk | slash | asterisk asterisk
+
+OL ::= LG | not openpar OL closepar
+LG ::= E OPL E
+OPL ::= more | less | equal equal | diff equal | more equal | less equal
+
+AV ::= var equal OA
+
+DI ::= int DI'
+DI'::= var DI'' | AV DI''
+DI'' ::= comma DI' | &
+
+SW ::= show E
+
+RD ::= read var
+
+FR ::= for FR' CD endfor
+FR' ::= E comma E
+
+CND ::= openpar OL closepar
+
+WL ::= while CND CD endwhile
+
+IF ::= if CND then IF' endif
+IF' ::= CD | CD else CD
+
+EL ::= endline

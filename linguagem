@@ -5,7 +5,7 @@ a = y
 a > y	// Maior
 a < y	// Menor
 a == y	// Igual
-a <> y	// Diferente
+a ?= y	// Diferente
 a >= y	// Maior ou igual
 a <= y	// Menor ou igual
 not a   // Negação
@@ -16,27 +16,25 @@ a / y     // Divisão
 a ** y	// Potenciação
 
 // Declaração de variáveis
-int a, b
-real c
-char p
+int a, b;
+char 'p';
 
 // Loops
 for start, end
-    // Código
+    // Código;
 endfor
 
-while op
-    // Código
+while (op)
+    // Código;
 endwhile
 
 // Condicionais
-if op then
+if (op) then
     // código se verdadeiro
 else
     // código se não verdadeiro
 endif
 
 // Input e Output
-show var	// print var
-show ‘str’ 	// print string
-read var	// scan
+show var;	// print var
+read var;	// scan

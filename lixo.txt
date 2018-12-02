@@ -1,0 +1,81 @@
+S $
+CD S $
+WL S $
+while CND CD endwhile S $
+while openpar OL closepar CD endwhile S $
+while openpar LG closepar CD endwhile S $
+while openpar var OPL var closepar CD endwhile S $
+while openpar var more equal var closepar CD endwhile S $
+while openpar var more equal var closepar AV EL endwhile S $
+while openpar var more equal var closepar var equal OA EL endwhile S $
+while openpar var more equal var closepar var equal OA OPA OA EL endwhile S $
+while openpar var more equal var closepar var equal var OPA OA EL endwhile S $
+while openpar var more equal var closepar var equal var plus OA EL endwhile S $
+while openpar var more equal var closepar var equal var plus num EL endwhile S $
+while openpar var more equal var closepar var equal var plus num endline endwhile S $
+while openpar var more equal var closepar var equal var plus num endline endwhile $
+
+while (a >= var)
+  a = a + 1;
+endwhile
+
+S $
+CD S $
+SW EL S $
+show SW' EL S $
+show num endline S $
+show num endline AV EL $
+show num endline var AV' EL $
+show num endline var equal OA EL $
+show num endline var equal OA OPA OA EL $
+show num endline var equal OA OPA OA OPA OA EL $
+show num endline var equal num OPA OA OPA OA EL $
+show num endline var equal num plus OA OPA OA EL $
+show num endline var equal num plus num OPA OA EL $
+show num endline var equal num plus num slash OA EL $
+show num endline var equal num plus num slash num EL $
+show num endline var equal num plus num slash num endline $
+
+show 2;
+x = 1 + 2 / 3;
+
+int x, y = 1 + 11;
+while (x < y)
+  x = x + 1;
+  show x;
+endwhile
+read y;
+for x, y
+  x = 111;
+endfor
+
+S' $
+CD S $
+WL S $
+while CND CD endwhile S $
+while openpar OL closepar CD endwhile S $
+while openpar LG closepar CD endwhile S $
+while openpar E OPL E closepar CD endwhile S $
+while openpar num OPL E closepar CD endwhile S $
+while openpar num more E closepar CD endwhile S $
+while openpar num more var closepar CD endwhile S $
+while openpar num more var closepar IF endwhile S $
+while openpar num more var closepar if CND then IF' endif endwhile S $
+while openpar num more var closepar if CND then CD else CD endif endwhile S $
+while openpar num more var closepar if CND then AV EL else CD endif endwhile S $
+while openpar num more var closepar if CND then var equal OA EL else CD endif endwhile S $
+while openpar num more var closepar if CND then var equal E EL else CD endif endwhile S $
+while openpar num more var closepar if CND then var equal num EL else CD endif endwhile S $
+while openpar num more var closepar if CND then var equal num endline else CD endif endwhile S $
+while openpar num more var closepar if CND then var equal num endline else AV EL endif endwhile S $
+while openpar num more var closepar if CND then var equal num endline else var equal OA EL endif endwhile S $
+while openpar num more var closepar if CND then var equal num endline else var equal E EL endif endwhile S $
+while openpar num more var closepar if CND then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar OL closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar LG closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar E OPL E closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar var OPL E closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar var more E closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num EL endif endwhile S $
+while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num endline endif endwhile S $
+while openpar num more var closepar if openpar var more var closepar then var equal num endline else var equal num endline endif endwhile$
