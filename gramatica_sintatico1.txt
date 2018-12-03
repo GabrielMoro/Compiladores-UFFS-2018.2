@@ -3,7 +3,7 @@ S  ::= CD S | &
 CD ::= DI EL | SW EL | RD EL | FR | WL | IF | AV EL
 E ::= var | num
 
-OA ::= E OPA OA | E
+OA ::= E OPA OA | openpar OA closepar | E
 
 OPA ::= plus | minus | asterisk | slash | asterisk asterisk
 
@@ -17,7 +17,7 @@ DI ::= int DI'
 DI'::= var DI'' | AV DI''
 DI'' ::= comma DI' | &
 
-SW ::= show E
+SW ::= show OA
 
 RD ::= read var
 

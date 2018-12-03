@@ -14,6 +14,7 @@ E -> var
 E -> num
 
 OA -> E OPA OA
+OA -> openpar OA closepar
 OA -> E
 OPA -> plus
 OPA -> minus
@@ -39,7 +40,7 @@ DI1 -> AV DI2
 DI2 -> comma DI1
 DI2 -> ''
 
-SW -> show E
+SW -> show OA
 
 RD -> read var
 
