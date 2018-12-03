@@ -117,3 +117,18 @@ if (x > x) then
 else
   x = x;
 endif
+
+S' $
+S $
+CD S $
+SW EL S $
+show OA EL S $
+show E OPA OA EL S $
+show var OPA OA EL S $
+show var plus OA EL S $
+show var plus E EL S $
+show var plus num EL S $
+show var plus num endline S $
+show var plus num endline $
+
+show x + 2

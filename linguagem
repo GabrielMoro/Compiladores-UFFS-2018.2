@@ -1,23 +1,24 @@
 // Atribuir valor
-a = y
+var = var; || var = num;
 
-// op
-a > y	// Maior
-a < y	// Menor
-a == y	// Igual
-a ?= y	// Diferente
-a >= y	// Maior ou igual
-a <= y	// Menor ou igual
-not a   // Negação
+// op lógicas
+a > b	   // Maior
+a < b	   // Menor
+a == b	 // Igual
+a ?= b	 // Diferente
+a >= b	 // Maior ou igual
+a <= b	 // Menor ou igual
+not a    // Negação
+
+// op aritiméticas
 a + y    // Soma
-a - y     // Subtração
-a * y     // Multiplicação
-a / y     // Divisão
-a ** y	// Potenciação
+a - y    // Subtração
+a * y    // Multiplicação
+a / y    // Divisão
+a ** y	 // Potenciação
 
 // Declaração de variáveis
-int a, b;
-char 'p';
+int a, b = num, [...];
 
 // Loops
 for start, end
@@ -30,11 +31,11 @@ endwhile
 
 // Condicionais
 if (op) then
-    // código se verdadeiro
+    // código;
 else
-    // código se não verdadeiro
+    // código;
 endif
 
 // Input e Output
-show var;	// print var
-read var;	// scan
+show (var ou num);	// print var ou num
+read var;	          // scan

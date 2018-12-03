@@ -5,16 +5,20 @@ int b;
 read b;
 
 if (not (x < y)) then
-  x = 2;
+  x = x + 1;
+  y = y - 1;
 else
-  b = 1;
+  b = x;
+  y = y + 1;
 endif
 
 show 2;
 x = 1 + 2 / 3;
 
 for 1, 10
-  show y + 1;
+  if (y < x) then
+    show y + 1;
+  endif
 endfor
 
 while (a > x)
@@ -23,4 +27,3 @@ endwhile
 
 read b;
 show b;
-showb
