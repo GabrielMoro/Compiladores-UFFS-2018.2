@@ -57,7 +57,7 @@ for linhaCodigo in range(len(codigo)):
     fim = 0
     for caractere in range(len(codigo[linhaCodigo])):
         if codigo[linhaCodigo][caractere] not in alfabeto and codigo[linhaCodigo][caractere] not in sep:
-            print("Esse símbolo não faz parte do alfabeto: " + codigo[linhaCodigo][caractere])
+            print("Linha: " + str(linhaAtual) + "Esse símbolo não faz parte do alfabeto: " + codigo[linhaCodigo][caractere])
             exit()
         if codigo[linhaCodigo][caractere] not in sep:
             fim += 1
@@ -74,7 +74,7 @@ for linhaCodigo in range(len(codigo)):
         for caractere in range(len(palavra)):
             estadoAtual = int(afd[palavra[caractere]][estadoAtual])
         if estadoAtual == -1:
-            print("Esse token nao existe nessa linguagem: " + palavra)
+            print("Linha: " + str(linhaAtual) + "Esse token não existe nessa linguagem: " + palavra)
             exit()
         else:
             tabSimb.write(palavra+'!'+tags[estadoAtual]+'!'+str(linhaAtual)+'\n') #str(estadoAtual)
