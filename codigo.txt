@@ -1,6 +1,6 @@
 int a = 3;
-int x, y = a - 2;
-x = y;
+int y = a - 2;
+int x = y;
 int b;
 read b;
 

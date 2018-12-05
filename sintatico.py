@@ -78,4 +78,10 @@ for i in range(len(ts)):
                     exit(0)
                 declaradas.append(var)
 
-print("\nNão foi detectada nenhuma variavel duplicada")
+
+for simb in ts:
+    if(simb[1] == 'var' and simb[0] not in declaradas):
+        print("\nErro semântico:\n Linha " + simb[2] + ": varíavel " + simb[0] + " não declarada")
+        exit(0)
+
+print("\nNão foi detectada nenhum erro semântico")
