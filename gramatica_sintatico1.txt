@@ -21,14 +21,14 @@ SW ::= show OA
 
 RD ::= read var
 
-FR ::= for FR' CD endfor
+FR ::= for FR' S endfor
 FR' ::= E comma E
 
 CND ::= openpar OL closepar
 
-WL ::= while CND CD endwhile
+WL ::= while CND S endwhile
 
 IF ::= if CND then IF' endif
-IF' ::= CD | CD else CD
+IF' ::= S | S else S
 
 EL ::= endline

@@ -25,5 +25,7 @@ while (a > x)
   a = a - 1;
 endwhile
 
+int h = 32;
+
 read b;
 show b;
