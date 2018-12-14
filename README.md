@@ -9,8 +9,8 @@
 ---
 
 * **Etapas**:
-  * (a)Análise Léxica;
-  * (b)Análise Sintática;
-  * (c)Análise Semântica;
+  * (a)Análise Léxica; _Implementado_
+  * (b)Análise Sintática; _Implementado_
+  * (c)Análise Semântica;  _Implementado_
   * (d)Geração de código intermediário;
   * (e)Otimização. 
